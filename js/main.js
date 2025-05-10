@@ -317,3 +317,22 @@ $(function() {
 
 });
 
+$("#gform").submit((e)=>{
+	e.preventDefault()
+	$.ajax({
+		url:"https://script.google.com/macros/s/AKfycbyqtzPciwGvmMo0_9FoS3OTN3xuDJKbg4kRElW9gu_DSnUMB3n0P1MepM5iR-oeTWXH/exec",
+		data:$("#gform").serialize(),
+		method:"post",
+		success:function (response){
+			document.querySelector('.thank').style.display = 'block';
+			document.getElementById('gform').reset();
+			//alert("Form submitted successfully")
+			//window.location.reload()
+			//window.location.href="https://google.com"
+		},
+		error:function (err){
+			alert("Something Error")
+
+		}
+	})
+})    	

@@ -9765,3 +9765,10 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+.thank{
+  display: none;
+  background-color: #1FA1EE;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  border-radius: 30px;
+}
